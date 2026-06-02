@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio — Erick BO</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- ─── NAVEGACIÓN ─────────────────────────────────── -->
+    <nav class="nav" id="nav">
+      <span class="nav-logo">Port. A<span class="accent">.</span></span>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ─── HERO ──────────────────────────────────────── -->
+    <header class="hero" id="inicio">
+      <div class="hero-bg">
+        <div class="grid-lines"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-pre reveal">Portafolio académico</p>
+        <h1 class="hero-title reveal">
+          Erick<span class="accent">-</span><br>
+          Barja Ortiz<span class="accent">-</span>
+        </h1>
+        <p class="hero-desc reveal">
+          Estudiante en formación con enfoque en análisis de datos,<br>
+          bases de datos SQL, Python y visualización BI.
+        </p>
+        <a href="#proyectos" class="btn reveal">Ver trabajo</a>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="photo-frame">
+          <img src="assets/img/foto.jpg" alt="Foto de perfil" id="profile-photo" class="profile-photo" />
+          <div class="photo-border"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ─── SOBRE MÍ ───────────────────────────────────── -->
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">01</span>
+          <h2 class="section-title">Sobre mí</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              Soy estudiante de Ingeniería de Sistemas de la UNCP con interés en el análisis
+              y gestión de datos. A lo largo de mi formación he desarrollado habilidades en SQL Server,
+              Python, Power BI y nociones de desarrollo web con HTML y CSS.
+            </p>
+            <p>
+              Me motiva convertir datos en información útil y construir soluciones
+              que aporten valor real. Este portafolio reúne las prácticas y proyectos
+              desarrollados durante mi curso.
+            </p>
+          </div>
+          <div class="about-stats reveal">
+            <div class="stat">
+              <span class="stat-num" data-target="5">0</span>
+              <span class="stat-label">Tecnologías</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="10">0</span>
+              <span class="stat-label">Prácticas</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="1">0</span>
+              <span class="stat-label">Curso</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── HABILIDADES ────────────────────────────────── -->
+    <section class="section section-alt" id="habilidades">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">02</span>
+          <h2 class="section-title">Habilidades</h2>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4.03 3 9 3s9-1.34 9-3V5"/>
+                <path d="M3 12c0 1.66 4.03 3 9 3s9-1.34 9-3"/>
+              </svg>
+            </div>
+            <h3>SQL Server</h3>
+            <p>Consultas, joins, procedimientos almacenados y diseño básico de bases de datos relacionales.</p>
+            <div class="skill-bar"><div class="skill-fill" data-w="65"></div></div>
+            <span class="skill-level">Intermedio</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                <path d="M8 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <h3>Python</h3>
+            <p>Fundamentos del lenguaje, manejo de datos con pandas y scripts de automatización básica.</p>
+            <div class="skill-bar"><div class="skill-fill" data-w="55"></div></div>
+            <span class="skill-level">Básico-Intermedio</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M3 9h18M9 21V9"/>
+              </svg>
+            </div>
+            <h3>Power BI</h3>
+            <p>Creación de dashboards, transformación de datos con Power Query y visualizaciones interactivas.</p>
+            <div class="skill-bar"><div class="skill-fill" data-w="60"></div></div>
+            <span class="skill-level">Intermedio</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M4 4l4 4-4 4M12 20h8"/>
+              </svg>
+            </div>
+            <h3>HTML & CSS</h3>
+            <p>Maquetación web, diseño responsivo y estructuración semántica de páginas.</p>
+            <div class="skill-bar"><div class="skill-fill" data-w="60"></div></div>
+            <span class="skill-level">Intermedio</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+            </div>
+            <h3>JavaScript</h3>
+            <p>Conceptos base: variables, funciones, DOM básico e interacciones simples.</p>
+            <div class="skill-bar"><div class="skill-fill" data-w="30"></div></div>
+            <span class="skill-level">Básico</span>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 8v4l3 3"/>
+              </svg>
+            </div>
+            <h3>En aprendizaje</h3>
+            <p>Git, Excel avanzado y otras tecnologías complementarias al análisis de datos.</p>
+            <div class="skill-bar"><div class="skill-fill" data-w="20"></div></div>
+            <span class="skill-level">Explorando</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PROYECTOS / PRÁCTICAS ──────────────────────── -->
+    <section class="section" id="proyectos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">03</span>
+          <h2 class="section-title">Prácticas realizadas (cuaderno)</h2>
+        </div>
+        <p class="section-sub reveal">
+          Trabajos desarrollados durante el curso — informes y código fuente.
+        </p>
+
+        <div class="projects-grid">
+
+          <!-- TARJETAS -->
+          <article class="project-card reveal">
+            <div class="project-tag">Web</div>
+            <h3>Este portafolio</h3>
+            <p>Diseño y desarrollo de este portafolio con HTML, CSS puro y JavaScript básico. Desplegado en GitHub Pages.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/GErickOBTS/portafolio" class="link-btn" target="_blank" id="github-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Ver en GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-tag">Infografía</div>
+            <h3>Práctica 01 - Infografía de funcionamiento web</h3>
+            <p>PDF que explica el funcionamiento de la web y bases.</p>
+            <div class="project-tech">
+              <span>Python</span><span>pandas</span><span>matplotlib</span>
+            </div>
+            <div class="project-links">
+              <a href="docs/Infografia_Web.pdf" class="link-btn" download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Descargar infografía
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-tag">Informe</div>
+            <h3>Práctica 02 - HTML5, XML, CSS3, Flexbox/Grid, Diseño Responsivo y SEO</h3>
+            <p>Página web semántica utilizando HTML5 y CSS3, aplicando unidades relativas/absolutas, display, Flexbox y Grid, e implementando diseño fluido y responsivo. Comprender el ciclo de vida de la página, el árbol DOM, criterios básicos de SEO y compatibilidad cross-browser.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</SPan><span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="assets/docs/BARJA_ORTIZ_Semana02_DAW.pdf" class="link-btn" target="_blank">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Ver PDF
+              </a>
+              <a href="https://github.com/GErickOBTS/Semana02" class="link-btn" target="_blank" id="github-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Ver en GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-tag">Informe</div>
+            <h3>Práctica 02 Grupal - HTML5, XML, CSS3, Flexbox/Grid, Diseño Responsivo y SEO</h3>
+            <p>Implementar una estructura HTML5 semántica con atributos ARIA, maquetar un layout híbrido (CSS Grid + Flexbox) con tipografía fluida (clamp(), calc()), aplicar diseño responsivo avanzado con Container Queries, y validar accesibilidad, SEO y compatibilidad cruzada.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</SPan><span>JS</span>
+            </div>
+            <div class="project-links">
+              <a href="assets/docs/Practica_Grupal_Semana02_DAW.pdf" class="link-btn" target="_blank">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Ver PDF
+              </a>
+              <a href="https://github.com/IngenieroTaipe/practica_2" class="link-btn" target="_blank" id="github-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Ver en GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-tag">Informe</div>
+            <h3>Práctica 03 — Frameworks CSS Modernos (Bootstrap 5 & Tailwind CSS), Componentes UI, Layout</h3>
+            <p>Interfaz web responsiva utilizando Bootstrap 5 (enfoque basado en componentes) y Tailwind CSS (enfoque utility-first), comparando sus paradigmas de maquetación, aplicando sistemas de grillas, tipografía adaptativa, componentes de aplicación (badges, dropdowns, cards, forms) y validando accesibilidad, rendimiento y SEO.</p>
+            <div class="project-tech">
+              <span>Bootstrap 5</span><span>Tailwind CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="assets/docs/BARJA_ORTIZ_Semana03_DAW.pdf" class="link-btn" target="_blank">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Ver PDF
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-tag">Informe</div>
+            <h3>Práctica 04 — JavaScript & TypeScript, Manipulación del DOM, Funciones Avanzadas (Closures, IIFE, Arrow), Canvas API y Animaciones</h3>
+            <p>Manipulación del DOM con JavaScript moderno (ES6+), estructuras de control, funciones flecha, autoinvocadas (IIFE) y closures para gestión de estado, e implementarción de una animación interactiva usando Canvas API. Comprender el motor de ejecución JS, el Event Loop, el ciclo de renderizado y estrategias de optimización (requestAnimationFrame, prevención de fugas de memoria).</p>
+            <div class="project-tech">
+              <span>JavaScript</span><span>Typescript</span>
+            </div>
+            <div class="project-links">
+              <a href="assets/docs/BARJA_ORTIZ_Semana04_DAW.pdf" class="link-btn" target="_blank">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Ver PDF
+              </a>
+              <a href="https://github.com/GErickOBTS/Semana04-2" class="link-btn" target="_blank" id="github-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Ver en GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-tag">Informe</div>
+            <h3>Práctica 05 Grupal</h3>
+            <p>Arquitectura CSR, Componentes Anidados con	Estructura jerárquica estricta, Estilado Estratégico, uso de CSS Modules para evitar colisiones en tarjetas, Inline Styles calculados para métricas dinámicas, y Variables CSS globales para la paleta de colores. Validación de Tipos y Reporte CSR</p>
+            <div class="project-tech">
+              <span>CSR</span><span>CSS Modules</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/IngenieroTaipe/Proyecto_grupal" class="link-btn" target="_blank" id="github-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Ver en GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-tag">Informe</div>
+            <h3>Práctica 06 — Framework JS (React), Client-Side Rendering (CSR), JSX, Props & Children, Estrategias de Estilado</h3>
+            <p>Aplicación frontend de página única (SPA) utilizando un framework JS (React), configurar el entorno con herramientas modernas (Vite + npm/pnpm), arquitectura basada en componentes con JSX, transmisión de datos mediante props y composición con children, aplicar estrategias de estilado (CSS Modules / Tailwind / inline) y validar el comportamiento de Client-Side Rendering (CSR) frente al ciclo de vida del DOM.</p>
+            <div class="project-tech">
+              <span>React JS</span><span>CSR</span>
+            </div>
+            <div class="project-links">
+              <a href="assets/docs/BARJA_ORTIZ_Semana06_DAW.pdf" class="link-btn" target="_blank">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Ver PDF
+              </a>
+              <a href="https://github.com/GErickOBTS/Semana06-1" class="link-btn" target="_blank" id="github-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Ver en GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-tag">Informe</div>
+            <h3>Práctica 07 — React Hooks: useState, useEffect, useContext, useRef, useReducer, useCallback, useMemo y Hooks Personalizados</h3>
+            <p>Uso estratégico de Hooks nativos, aplicación de useEffect para efectos secundarios y limpieza, gestión de estado global con useContext, optimización con useMemo/useCallback, manejo de referencias inmutables con useRef, refactorización de la lógica compleja con useReducer, y encapsulamiento de comportamientos reutilizables en Hooks Personalizados.</p>
+            <div class="project-tech">
+              <span>React JS</span><span>React Hooks</span>
+            </div>
+            <div class="project-links">
+              <a href="assets/docs/BARJA_ORTIZ_Semana07_DAW.pdf" class="link-btn" target="_blank">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Ver PDF
+              </a>
+              <a href="https://github.com/GErickOBTS/Semana07-1" class="link-btn" target="_blank" id="github-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Ver en GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-tag">Informe</div>
+            <h3>Práctica 07 Grupal — React Hooks: useState, useEffect, useContext, useRef, useReducer,  useCallback, useMemo y Hooks Personalizados</h3>
+            <p>Dashboard de Gestión con Estado Complejo con useReducer para estado de lista (add, remove, filter, sort) + useState para UI local, useContext para tema claro/oscuro o preferencias de usuario, useEffect para sincronizar preferencias con localStorage y cleanup, useMemo para lista filtrada/ordenada, useCallback para handlers de botones, useRef para auto-focus en input o acceso a nodo DOM sin re-render y Hook personalizado useLocalStorage o useDebounce reutilizable.</p>
+            <div class="project-tech">
+              <span>React JS</span><span>React Hooks</span>
+            </div>
+            <div class="project-links">
+              <a href="assets/docs/Practica_Grupal_Semana07_DAW.pdf" class="link-btn" target="_blank">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Ver PDF
+              </a>
+              <a href="https://github.com/IngenieroTaipe/semana_7" class="link-btn" target="_blank" id="github-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Ver en GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-tag">Informe</div>
+            <h3>Parcial 1 Grupal</h3>
+            <p>Uso de React para desarrollar una SPA (Single Page Application).</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JS</span><span>React JS</span>
+            </div>
+            <div class="project-links">
+              <a href="assets/docs/Practica_Grupal_Semana07_DAW.pdf" class="link-btn" target="_blank">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Ver PDF
+              </a>
+              <a href="https://github.com/IngenieroTaipe/parcial1" class="link-btn" target="_blank" id="github-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                Ver en GitHub
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Nota para agregar más -->
+        <p class="add-note reveal">
+          ✦ &nbsp;Más prácticas se irán agregando conforme avance el curso.
+        </p>
+      </div>
+    </section>
+
+    <!-- ─── CONTACTO ───────────────────────────────────── -->
+    <section class="section section-alt" id="contacto">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-number">04</span>
+          <h2 class="section-title">Contacto</h2>
+        </div>
+        <div class="contact-grid">
+          <p class="contact-desc reveal">
+            ¿Tienes comentarios sobre este portafolio o quieres ponerte en contacto?<br>
+            Puedes encontrarme en:
+          </p>
+          <div class="contact-links reveal">
+            <a href="mailto:gerboxd15.math@gmail.com" class="contact-item" id="email-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+              gerboxd15.math@gmail.com
+            </a>
+            <a href="https://github.com/GErickOBTS" class="contact-item" target="_blank" id="github-contact">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+              github.com/GErickOBTS
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── FOOTER ─────────────────────────────────────── -->
+    <footer class="footer">
+      <p>Portafolio académico DAW &mdash; <span id="year"></span></p>
+      <p class="footer-sub">Hecho con HTML, CSS & JS</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
